@@ -1,0 +1,6 @@
+| Stakeholders                             | Role                                                               | Needs                                                                 |
+|:-----------------------------------------|:-------------------------------------------------------------------|:----------------------------------------------------------------------|
+| **Receptionists** | Managing daily bookings and patient check-ins.                     | Needs an intuitive interface to search records and book appointments. |
+| **Doctors**              | Medical staff performing the consultations.                        | Requires reliable, up-to-date daily patient schedules.                |
+| **Management**                    | Administrators responsible for clinic's efficiency and compliance. | Wants a system that eliminates paper records and errors.              |
+| **Patients**                             | The clients receiving healthcare services at the clinic.           | Accurate appointment timing and check-ins.                            |
