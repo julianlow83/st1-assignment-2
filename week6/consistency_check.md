@@ -1,0 +1,1 @@
+Python skeleton directly matches every attribute and operation in the UML model without implementing complex inner logic yet
