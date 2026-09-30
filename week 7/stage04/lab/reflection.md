@@ -1,0 +1,5 @@
+The original AI solution enforced the cancellation reason when cancel_appointment() was called, but it did not guarantee that every Appointment object in a cancelled state contained a valid reason. This could create an invalid object if status values were passed directly during construction or modified in another way. My change strengthened the business rule by ensuring that the object remains valid regardless of how it is created. 
+
+The approved design constrained the AI because the requirements explicitly stated that a cancelled appointment must have a non-empty cancellation reason and that cancelled appointments must be retained for historical purposes.  
+ 
+These requirements limited the available design choices and prevented the AI from treating cancellation as a simple status change or deleting the appointment. The UML also restricted the solution to the Appointment class and its related enum/exception, meaning validation logic had to be implemented within the domain object itself rather than in a separate service or database layer.(This last paragraph is CoPilots words because I needed it to explain it’s logic to me). 

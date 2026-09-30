@@ -59,6 +59,10 @@ class Appointment:
         self._status = status
         self._cancellation_reason = cancellation_reason.strip()
 
+        # Validation check (after _cancellation_reason is stripped)
+        if self._status == AppointmentStatus.CANCELLED and not self._cancellation_reason:
+            raise AppointmentException("Cancellation reason is required for cancelled appointments.")
+
     @property
     def appointment_id(self) -> str:
         return self._appointment_id
