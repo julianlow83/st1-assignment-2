@@ -7,3 +7,6 @@ AI-assisted suggestions sometimes over-designed the solution by introducing addi
  
 
 The evidence supporting my final modelling choices was the degree to which each class's attributes and methods could be directly traced back to the documented requirements. I selected designs that provided the simplest solution while still satisfying the stated functional requirements and maintaining clear responsibilities between classes. 
+
+NOTE: After doing the tutorial, there has been a change to the UML Design in this lab, I will will be going with a ClinicController class to orchestrate everything (assuming no issues when coding), please see the tutorial folder for details).
+

@@ -1,0 +1,28 @@
+smartcare/
+│
+├── domain/                         # Core Domain (Entities, Enums, Rules)
+│   ├── __init__.py
+│   ├── appointment_status.py       # AppointmentStatus Enum
+│   ├── patient.py                  # Patient Entity
+│   ├── practitioner.py             # Practitioner Entity
+│   ├── appointment.py              # Appointment Entity (State machine & collision logic)
+│   └── exceptions.py              # Domain Exceptions
+│
+├── services/                       # Application / Workflow Orchestration Layer
+│   ├── __init__.py
+│   └── appointment_service.py      # AppointmentService (see Task D)
+│
+├── repositories/                   # Abstract Repository Contracts Layer
+│   ├── __init__.py
+│   └── appointment_repository.py    # Abstract Base Class / Interface (see Task E)
+│
+├── persistence/                    # Technical Infrastructure & Storage Layer
+│   ├── __init__.py
+│   ├── sqlite_repository.py       # Concrete SQLite Implementation of AppointmentRepository
+│   └── database.py                 # SQLite Connection Manager & DDL Schema Setup
+│
+├── presentation/                   # User Interface / GUI Layer
+│   ├── __init__.py
+│   └── cli_view.py                 # Terminal menus, input parsing, and print formatting
+│
+└── main.py                         # Composition Root (Injects dependencies & starts app)
